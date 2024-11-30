@@ -1,0 +1,332 @@
+.profile-container {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 2rem;
+}
+
+.profile-header {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 3rem;
+  padding: 2rem;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.profile-avatar.large {
+  width: 100px;
+  height: 100px;
+  font-size: 2.5rem;
+  background: #3498db;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.profile-info h1 {
+  margin: 0;
+  color: #2c3e50;
+  font-size: 2rem;
+}
+
+.profile-info p {
+  margin: 0.5rem 0 0;
+  color: #7f8c8d;
+}
+
+.saved-roadmaps {
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.saved-roadmaps h2 {
+  margin-bottom: 2rem;
+  color: #2c3e50;
+}
+
+.roadmaps-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.roadmap-card {
+  background: white;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.roadmap-card:hover {
+  transform: translateY(-5px);
+}
+
+.roadmap-card-header {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--background-color);
+}
+
+.roadmap-card-header .material-icons {
+  color: var(--primary-color);
+  font-size: 1.5rem;
+}
+
+.roadmap-card-header h3 {
+  margin: 0;
+  color: var(--text-color);
+  font-size: 1.25rem;
+}
+
+.roadmap-card-content {
+  margin-bottom: 1.5rem;
+}
+
+.roadmap-card-content p {
+  margin: 0.5rem 0;
+  color: #7f8c8d;
+}
+
+.roadmap-card-actions {
+  display: flex;
+  gap: 1rem;
+}
+
+.view-button, .delete-button {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.view-button {
+  background: #3498db;
+  color: white;
+  flex: 1;
+}
+
+.delete-button {
+  background: #e74c3c;
+  color: white;
+}
+
+.no-roadmaps {
+  text-align: center;
+  padding: 3rem;
+  color: #7f8c8d;
+}
+
+.no-roadmaps .material-icons {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.create-roadmap-button {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.8rem 1.5rem;
+  background: #3498db;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
+}
+
+.create-roadmap-button:hover {
+  background: #2980b9;
+}
+
+/* Add these to your existing App.css */
+.profile-menu-container {
+  position: relative;
+}
+
+.profile-button {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #2c3e50;
+}
+
+.profile-avatar {
+  width: 32px;
+  height: 32px;
+  background: #3498db;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+.profile-dropdown {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  min-width: 200px;
+  z-index: 1000;
+}
+
+.dropdown-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.8rem 1rem;
+  color: #2c3e50;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.dropdown-item:hover {
+  background: #f8f9fa;
+}
+
+.no-user {
+  text-align: center;
+  padding: 4rem 2rem;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.no-user .material-icons {
+  font-size: 4rem;
+  color: #3498db;
+  margin-bottom: 1rem;
+}
+
+.no-user h2 {
+  color: #2c3e50;
+  margin-bottom: 1rem;
+}
+
+.no-user p {
+  color: #7f8c8d;
+  margin-bottom: 2rem;
+}
+
+.login-button {
+  display: inline-block;
+  padding: 0.8rem 1.5rem;
+  background: #3498db;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
+}
+
+.login-button:hover {
+  background: #2980b9;
+}
+
+.loading-spinner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  color: var(--primary-color);
+  font-size: 1.1rem;
+}
+
+.spinning {
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.skills-preview {
+  margin-top: 1rem;
+}
+
+.skills-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.skill-tag {
+  background: var(--primary-color);
+  color: white;
+  padding: 0.25rem 0.75rem;
+  border-radius: 50px;
+  font-size: 0.875rem;
+}
+
+.skill-tag.more {
+  background: var(--background-color);
+  color: var(--text-color);
+}
+
+.profile-info-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.edit-profile-button {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  background-color: #f0f0f0;
+  border: none;
+  border-radius: 20px;
+  color: #333;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.edit-profile-button:hover {
+  background-color: #e0e0e0;
+  transform: translateY(-1px);
+}
+
+.edit-profile-button .material-icons {
+  font-size: 1.1rem;
+}
+
+/* Update profile info styles to accommodate the new layout */
+.profile-info {
+  flex: 1;
+  padding: 0 1rem;
+}
+
+.profile-info h1 {
+  margin: 0;
+  font-size: 1.8rem;
+  color: #333;
+}
+
+.profile-info p {
+  margin: 0;
+  color: #666;
+}
+ 

@@ -1,0 +1,91 @@
+.roadmap-wizard {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 2rem;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.welcome-message {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.welcome-message h2 {
+  color: #2c3e50;
+  margin-bottom: 1rem;
+}
+
+.question-container {
+  margin-top: 2rem;
+}
+
+.question-container h3 {
+  color: #2c3e50;
+  margin-bottom: 1rem;
+}
+
+select {
+  width: 100%;
+  padding: 0.8rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.multiselect {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.multiselect label {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+}
+
+.next-button {
+  width: 100%;
+  padding: 1rem;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.next-button:hover {
+  background-color: #2980b9;
+}
+
+.next-button:disabled {
+  background-color: #bdc3c7;
+  cursor: not-allowed;
+}
+
+.save-button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 20px;
+}
+
+.save-button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+.save-button:hover:not(:disabled) {
+  background-color: #45a049;
+} 
